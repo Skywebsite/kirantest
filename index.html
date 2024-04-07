@@ -1,7 +1,8 @@
 <html>
   <head>
     <body bgcolor="black">
-      <a href="kiran.c"><h1 style="color:white">kiran</h1></a>  
+      <a href="kiran.c"><h1 style="color:white">kiran</h1></a> 
+      <?php
         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
   if($check !== false) {
     echo "File is an image - " . $check["mime"] . ".";
